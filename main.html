@@ -1,0 +1,1959 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SmartGrow Infotech - Complete Services Guide</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.8;
+            color: #2c3e50;
+            background: #ffffff;
+        }
+        
+        /* Header Styles */
+        .header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 60px 20px;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+        
+        .header h1 {
+            font-size: 3em;
+            margin-bottom: 15px;
+            font-weight: 700;
+            letter-spacing: -1px;
+        }
+        
+        .header p {
+            font-size: 1.3em;
+            opacity: 0.95;
+            font-weight: 300;
+        }
+        
+        /* Container */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+        
+        /* Table of Contents */
+        .toc-wrapper {
+            background: #f8f9fa;
+            border-radius: 12px;
+            padding: 40px;
+            margin-bottom: 50px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+        }
+        
+        .toc-wrapper h2 {
+            color: #667eea;
+            font-size: 2em;
+            margin-bottom: 25px;
+            text-align: center;
+        }
+        
+        .toc-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 15px;
+        }
+        
+        .toc-item {
+            background: white;
+            padding: 18px 25px;
+            border-radius: 8px;
+            border-left: 4px solid #667eea;
+            transition: all 0.3s ease;
+            cursor: pointer;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+        }
+        
+        .toc-item:hover {
+            transform: translateX(5px);
+            box-shadow: 0 4px 12px rgba(102, 126, 234, 0.2);
+            border-left-color: #764ba2;
+        }
+        
+        /* Stats Section */
+        .stats-section {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+            margin: 50px 0;
+        }
+        
+        .stat-card {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 40px 30px;
+            border-radius: 12px;
+            text-align: center;
+            box-shadow: 0 5px 15px rgba(102, 126, 234, 0.3);
+            transition: transform 0.3s ease;
+        }
+        
+        .stat-card:hover {
+            transform: translateY(-5px);
+        }
+        
+        .stat-card h3 {
+            font-size: 3em;
+            margin-bottom: 10px;
+            font-weight: 700;
+        }
+        
+        .stat-card p {
+            font-size: 1.1em;
+            opacity: 0.95;
+        }
+        
+        /* Service Section */
+        .service-section {
+            background: white;
+            margin-bottom: 50px;
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 2px 15px rgba(0,0,0,0.08);
+            border-left: 6px solid #667eea;
+        }
+        
+        .service-section h2 {
+            color: #667eea;
+            font-size: 2.5em;
+            margin-bottom: 20px;
+            padding-bottom: 15px;
+            border-bottom: 3px solid #f093fb;
+        }
+        
+        .service-section h3 {
+            color: #764ba2;
+            font-size: 1.8em;
+            margin-top: 30px;
+            margin-bottom: 15px;
+            font-weight: 600;
+        }
+        
+        .service-section h4 {
+            color: #48bb78;
+            font-size: 1.4em;
+            margin-top: 25px;
+            margin-bottom: 12px;
+            font-weight: 600;
+        }
+        
+        .service-section p {
+            margin-bottom: 18px;
+            line-height: 1.8;
+            color: #34495e;
+        }
+        
+        .service-section ul {
+            margin: 20px 0;
+            padding-left: 25px;
+        }
+        
+        .service-section li {
+            margin-bottom: 12px;
+            line-height: 1.7;
+            color: #34495e;
+        }
+        
+        .service-section strong {
+            color: #2c3e50;
+            font-weight: 600;
+        }
+        
+        /* Pricing Box */
+        .pricing-box {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 35px;
+            border-radius: 12px;
+            margin: 30px 0;
+            box-shadow: 0 5px 20px rgba(102, 126, 234, 0.3);
+        }
+        
+        .pricing-box h4 {
+            font-size: 1.8em;
+            margin-bottom: 20px;
+            color: white;
+        }
+        
+        .pricing-box p {
+            margin-bottom: 15px;
+            font-size: 1.1em;
+            line-height: 1.7;
+            color: white;
+        }
+        
+        .pricing-box strong {
+            color: #fff;
+            font-weight: 700;
+        }
+        
+        /* Highlight Box */
+        .highlight-box {
+            background: #f8f9fa;
+            padding: 30px;
+            border-radius: 10px;
+            border-left: 5px solid #48bb78;
+            margin: 25px 0;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+        }
+        
+        .highlight-box h4 {
+            color: #48bb78;
+            margin-bottom: 15px;
+        }
+        
+        .highlight-box p {
+            color: #2c3e50;
+            margin-bottom: 12px;
+        }
+        
+        /* Info Box */
+        .info-box {
+            background: #e8f4f8;
+            padding: 30px;
+            border-radius: 10px;
+            border-left: 5px solid #4299e1;
+            margin: 25px 0;
+        }
+        
+        .info-box h4 {
+            color: #4299e1;
+            margin-bottom: 15px;
+        }
+        
+        /* Feature Grid */
+        .feature-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+            margin: 25px 0;
+        }
+        
+        .feature-item {
+            background: #f8f9fa;
+            padding: 25px;
+            border-radius: 10px;
+            border-left: 4px solid #48bb78;
+            transition: all 0.3s ease;
+        }
+        
+        .feature-item:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 5px 15px rgba(72, 187, 120, 0.2);
+        }
+        
+        .feature-item h4 {
+            margin-bottom: 10px;
+            color: #48bb78;
+        }
+        
+        /* Copy Button */
+        .copy-btn {
+            background: linear-gradient(135deg, #48bb78 0%, #38a169 100%);
+            color: white;
+            border: none;
+            padding: 15px 35px;
+            font-size: 16px;
+            border-radius: 8px;
+            cursor: pointer;
+            font-weight: 600;
+            margin-top: 20px;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 10px rgba(72, 187, 120, 0.3);
+        }
+        
+        .copy-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 15px rgba(72, 187, 120, 0.4);
+        }
+        
+        /* Footer */
+        .footer {
+            background: linear-gradient(135deg, #2c3e50 0%, #34495e 100%);
+            color: white;
+            padding: 50px 20px;
+            text-align: center;
+            margin-top: 60px;
+        }
+        
+        .footer h2 {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+        }
+        
+        .contact-info {
+            background: rgba(255,255,255,0.1);
+            padding: 30px;
+            border-radius: 12px;
+            margin: 30px auto;
+            max-width: 600px;
+        }
+        
+        .contact-info p {
+            margin: 12px 0;
+            font-size: 1.1em;
+        }
+        
+        /* Responsive */
+        @media (max-width: 768px) {
+            .header h1 {
+                font-size: 2em;
+            }
+            
+            .service-section {
+                padding: 25px;
+            }
+            
+            .service-section h2 {
+                font-size: 1.8em;
+            }
+            
+            .toc-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+        
+        /* Print Styles */
+        @media print {
+            .copy-btn {
+                display: none;
+            }
+            
+            .service-section {
+                page-break-inside: avoid;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <div class="header">
+        <h1>🚀 SmartGrow Infotech</h1>
+        <p>Your Complete Technology & Training Partner</p>
+        <p style="font-size: 1em; margin-top: 10px; opacity: 0.9;">All 10 Services | Detailed Descriptions | Digital Marketing Ready</p>
+    </div>
+
+    <!-- Main Container -->
+    <div class="container">
+
+        <!-- Table of Contents -->
+        <div class="toc-wrapper">
+            <h2>📑 Quick Navigation - All Services</h2>
+            <div class="toc-grid">
+                <div class="toc-item" onclick="location.href='#about'">🏢 About SmartGrow Infotech</div>
+                <div class="toc-item" onclick="location.href='#product-dev'">💻 1. Product Development</div>
+                <div class="toc-item" onclick="location.href='#web-dev'">🌐 2. Web Development</div>
+                <div class="toc-item" onclick="location.href='#app-dev'">📱 3. Mobile App Development</div>
+                <div class="toc-item" onclick="location.href='#btech'">🎓 4. B.Tech Projects</div>
+                <div class="toc-item" onclick="location.href='#crt'">🎯 5. CRT Training Program</div>
+                <div class="toc-item" onclick="location.href='#internship'">🚀 6. Internship Program</div>
+                <div class="toc-item" onclick="location.href='#consultancy'">💡 7. Technology Consultancy</div>
+                <div class="toc-item" onclick="location.href='#digital-marketing'">📈 8. Digital Marketing</div>
+                <div class="toc-item" onclick="location.href='#ai-ml'">🤖 9. AI/ML Projects & Training</div>
+                <div class="toc-item" onclick="location.href='#us-staffing'">🇺🇸 10. US IT Staffing</div>
+            </div>
+        </div>
+
+            <div id="about" class="service-section">
+                <h2>🏢 About SmartGrow Infotech</h2>
+                
+                <h3>Company Overview</h3>
+                <p>SmartGrow Infotech is a leading technology solutions and training company based in Hyderabad, India. Established in 2021, we have rapidly grown to become a trusted partner for businesses, startups, and students seeking cutting-edge software solutions and professional skill development.</p>
+                
+                <p>Our mission is to bridge the gap between academic learning and industry requirements while delivering world-class software products that drive business growth. We serve a diverse clientele ranging from early-stage startups to established enterprises, educational institutions, and individual students preparing for corporate careers.</p>
+
+                <div class="stats-grid">
+                    <div class="stat-card">
+                        <h3>500+</h3>
+                        <p>Projects Delivered</p>
+                    </div>
+                    <div class="stat-card">
+                        <h3>50+</h3>
+                        <p>Business Clients</p>
+                    </div>
+                    <div class="stat-card">
+                        <h3>1000+</h3>
+                        <p>Students Trained</p>
+                    </div>
+                    <div class="stat-card">
+                        <h3>87%</h3>
+                        <p>Placement Rate</p>
+                    </div>
+                </div>
+
+                <h3>Our Vision</h3>
+                <p>To be the most trusted technology partner in India, known for delivering innovative solutions that transform businesses and empower individuals with future-ready skills. We envision a future where every business has access to affordable, high-quality technology solutions, and every engineering student is job-ready upon graduation.</p>
+
+                <h3>Our Mission</h3>
+                <ul>
+                    <li>Deliver exceptional software products that exceed client expectations</li>
+                    <li>Bridge the skill gap between academic education and industry requirements</li>
+                    <li>Empower students with practical, job-ready technical and soft skills</li>
+                    <li>Provide cost-effective technology solutions to startups and SMBs</li>
+                    <li>Foster innovation and excellence in everything we do</li>
+                    <li>Build long-term relationships based on trust, transparency, and results</li>
+                </ul>
+
+                <h3>Core Values</h3>
+                <div class="highlight-box">
+                    <p><strong>Excellence:</strong> We strive for perfection in every project and training program we deliver.</p>
+                    <p><strong>Integrity:</strong> We operate with complete transparency and honesty in all our dealings.</p>
+                    <p><strong>Innovation:</strong> We continuously adopt the latest technologies and methodologies to stay ahead.</p>
+                    <p><strong>Customer Success:</strong> Our success is measured by the success of our clients and students.</p>
+                    <p><strong>Empowerment:</strong> We believe in enabling people with knowledge, skills, and opportunities.</p>
+                    <p><strong>Commitment:</strong> We are dedicated to delivering on our promises, every single time.</p>
+                </div>
+
+                <h3>Why Choose SmartGrow Infotech?</h3>
+                <ul>
+                    <li><strong>Proven Track Record:</strong> 500+ successful projects, 1000+ students trained, 87% placement rate</li>
+                    <li><strong>Expert Team:</strong> 15+ years of combined industry experience across technologies and domains</li>
+                    <li><strong>Quality Assurance:</strong> Industry-standard practices, rigorous testing, 99.9% satisfaction</li>
+                    <li><strong>Cost-Effective:</strong> Competitive pricing without compromising on quality</li>
+                    <li><strong>Modern Technology:</strong> Latest tech stacks - React, Spring Boot, Flutter, AI/ML, AWS/Azure</li>
+                    <li><strong>On-Time Delivery:</strong> 95% of projects delivered within agreed timelines</li>
+                    <li><strong>24/7 Support:</strong> Dedicated support team for all clients</li>
+                    <li><strong>End-to-End Solutions:</strong> From ideation to deployment, maintenance, and scaling</li>
+                    <li><strong>Student-Centric Approach:</strong> Unique focus on making students job-ready</li>
+                    <li><strong>Long-Term Partnership:</strong> We build lasting relationships, not just deliver projects</li>
+                </ul>
+
+                <button class="copy-btn" onclick="copySection('about')">📋 Copy About Section</button>
+            </div>
+
+            <!-- PRODUCT DEVELOPMENT -->
+            <div id="product-dev" class="service-section">
+                <h2>💻 1. Product Development Services</h2>
+                
+                <h3>Service Overview</h3>
+                <p>Product Development at SmartGrow Infotech is a comprehensive end-to-end service that transforms your innovative ideas into market-ready, scalable software products. We specialize in building SaaS applications, enterprise solutions, marketplaces, and custom software products that solve real business problems and create value for users.</p>
+
+                <p>Our product development approach is rooted in Agile methodology, ensuring flexibility, continuous feedback, and iterative improvement. We don't just write code; we architect solutions that can scale from 100 users to 1 million users, from a single region to global operations.</p>
+
+                <h3>What We Build</h3>
+                <ul>
+                    <li><strong>SaaS Applications:</strong> Cloud-based software-as-a-service platforms with subscription models, multi-tenancy, and automated billing</li>
+                    <li><strong>Enterprise Software:</strong> Custom ERP, CRM, HRMS, and industry-specific solutions for large organizations</li>
+                    <li><strong>MVP Development:</strong> Minimum Viable Products to test market fit quickly (6-8 weeks turnaround)</li>
+                    <li><strong>E-commerce Platforms:</strong> Full-featured online stores with payment gateways, inventory management, and analytics</li>
+                    <li><strong>Marketplace Platforms:</strong> Multi-vendor marketplaces connecting buyers and sellers</li>
+                    <li><strong>FinTech Solutions:</strong> Payment processing, digital wallets, trading platforms, lending platforms</li>
+                    <li><strong>HealthTech Solutions:</strong> Telemedicine platforms, health records management, appointment scheduling</li>
+                    <li><strong>EdTech Platforms:</strong> Learning management systems, online course platforms, student portals</li>
+                </ul>
+
+                <h3>Our Development Process</h3>
+                <p><strong>Phase 1: Discovery & Planning (1 week)</strong></p>
+                <ul>
+                    <li>Detailed requirement gathering and analysis</li>
+                    <li>Market research and competitor analysis</li>
+                    <li>User persona development</li>
+                    <li>Technology stack selection</li>
+                    <li>Architecture design and wireframing</li>
+                </ul>
+
+                <p><strong>Phase 2: Design (1-2 weeks)</strong></p>
+                <ul>
+                    <li>UI/UX design with user-centric approach</li>
+                    <li>Interactive prototypes and mockups</li>
+                    <li>Design system creation</li>
+                    <li>Client feedback and iterations</li>
+                </ul>
+
+                <p><strong>Phase 3: Development (4-12 weeks)</strong></p>
+                <ul>
+                    <li>Agile sprints (2-week cycles)</li>
+                    <li>Clean, maintainable code following best practices</li>
+                    <li>Weekly demo sessions with client</li>
+                    <li>Continuous integration and deployment</li>
+                    <li>API development and third-party integrations</li>
+                </ul>
+
+                <p><strong>Phase 4: Testing & Deployment (2-3 weeks)</strong></p>
+                <ul>
+                    <li>Comprehensive testing (functional, integration, performance)</li>
+                    <li>Security testing and vulnerability assessment</li>
+                    <li>Production environment setup</li>
+                    <li>Go-live support</li>
+                </ul>
+
+                <h3>Technology Stack</h3>
+                <p><strong>Frontend:</strong> React.js, Angular, Vue.js, TypeScript, Next.js</p>
+                <p><strong>Backend:</strong> Spring Boot (Java), Node.js, Python (Django/FastAPI), .NET Core</p>
+                <p><strong>Databases:</strong> PostgreSQL, MongoDB, MySQL, Redis, Elasticsearch</p>
+                <p><strong>Cloud & DevOps:</strong> AWS, Azure, Google Cloud, Docker, Kubernetes, Jenkins</p>
+                <p><strong>Additional:</strong> GraphQL, WebSockets, Kafka, Payment Gateways (Stripe, Razorpay)</p>
+
+                <div class="pricing-box">
+                    <h4>💰 Pricing</h4>
+                    <p><strong>MVP Development:</strong> ₹3,50,000 - ₹6,00,000 (6-8 weeks)</p>
+                    <p><strong>Full Product:</strong> ₹8,00,000 - ₹15,00,000 (3-4 months)</p>
+                    <p><strong>Enterprise Solutions:</strong> ₹20,00,000+ (6+ months)</p>
+                    <p><strong>Monthly Retainer:</strong> ₹1,50,000 - ₹5,00,000/month</p>
+                </div>
+
+                <h3>Success Stories</h3>
+                <div class="highlight-box">
+                    <p><strong>EdTech SaaS Platform:</strong> Built online learning platform, now 25,000+ active users, ₹15L+ monthly revenue</p>
+                    <p><strong>E-commerce Marketplace:</strong> Multi-vendor platform processing 10,000+ orders/month, ₹50L+ GMV</p>
+                    <p><strong>FinTech Solution:</strong> Payment processing platform handling ₹10Cr+ transactions monthly</p>
+                </div>
+
+                <button class="copy-btn" onclick="copySection('product-dev')">📋 Copy Product Development Description</button>
+            </div>
+
+            <!-- WEB DEVELOPMENT -->
+            <div id="web-dev" class="service-section">
+                <h2>🌐 2. Web Development Services</h2>
+                
+                <h3>Service Overview</h3>
+                <p>Web Development at SmartGrow Infotech encompasses creating stunning, high-performance websites that not only look beautiful but also drive business results. Whether you need a corporate website, e-commerce store, or complex web application, we deliver solutions that convert visitors into customers.</p>
+
+                <h3>Types of Websites We Build</h3>
+                <ul>
+                    <li><strong>Corporate Websites:</strong> Professional business websites with company profile, services, team pages, and blog</li>
+                    <li><strong>E-commerce Websites:</strong> Online stores with shopping cart, payment gateway, inventory management, and order tracking</li>
+                    <li><strong>Portfolio Websites:</strong> For designers, photographers, artists - showcase your work beautifully</li>
+                    <li><strong>Custom Web Applications:</strong> CRM systems, project management tools, booking systems, customer dashboards</li>
+                    <li><strong>Landing Pages:</strong> High-converting marketing pages with lead capture forms and A/B testing</li>
+                    <li><strong>Progressive Web Apps (PWA):</strong> App-like experience on web with offline functionality and push notifications</li>
+                </ul>
+
+                <h3>Key Features We Implement</h3>
+                <ul>
+                    <li>Mobile-responsive design (perfect on all devices)</li>
+                    <li>Fast loading speed (under 2 seconds)</li>
+                    <li>SEO optimization (rank on Google)</li>
+                    <li>Contact forms with email notifications</li>
+                    <li>Google Maps integration</li>
+                    <li>Social media integration</li>
+                    <li>SSL security (HTTPS)</li>
+                    <li>Analytics (Google Analytics, Facebook Pixel)</li>
+                    <li>Live chat integration</li>
+                    <li>Blog/CMS for content management</li>
+                    <li>Payment gateway integration</li>
+                    <li>User registration and login</li>
+                </ul>
+
+                <h3>Technologies We Use</h3>
+                <p><strong>Frontend:</strong> HTML5, CSS3, JavaScript, React.js, Next.js, Tailwind CSS, Bootstrap</p>
+                <p><strong>Backend:</strong> Node.js, PHP (Laravel), Python (Django), Java Spring Boot</p>
+                <p><strong>CMS:</strong> WordPress, Custom CMS, Headless CMS (Strapi, Contentful)</p>
+                <p><strong>E-commerce:</strong> WooCommerce, Shopify, Custom solutions, Magento</p>
+
+                <h3>SEO & Performance Optimization</h3>
+                <ul>
+                    <li>Keyword research and on-page optimization</li>
+                    <li>Meta tags (title, description) optimization</li>
+                    <li>Image compression and lazy loading</li>
+                    <li>Code minification and browser caching</li>
+                    <li>CDN integration for global fast loading</li>
+                    <li>Mobile-first indexing</li>
+                    <li>Schema markup for rich snippets</li>
+                    <li>Core Web Vitals optimization</li>
+                </ul>
+
+                <div class="pricing-box">
+                    <h4>💰 Pricing</h4>
+                    <p><strong>Basic Website:</strong> ₹25,000 - ₹50,000 (5-10 pages, responsive, SEO, 1 month support)</p>
+                    <p><strong>Business Website:</strong> ₹50,000 - ₹1,50,000 (10-20 pages, custom design, blog, 3 months support)</p>
+                    <p><strong>E-commerce:</strong> ₹1,50,000 - ₹5,00,000 (Full-featured online store with admin panel)</p>
+                    <p><strong>Web Application:</strong> ₹3,00,000+ (Complex functionality and integrations)</p>
+                    <p><strong>Monthly Maintenance:</strong> ₹5,000 - ₹25,000/month</p>
+                </div>
+
+                <button class="copy-btn" onclick="copySection('web-dev')">📋 Copy Web Development Description</button>
+            </div>
+
+            <!-- APP DEVELOPMENT -->
+            <div id="app-dev" class="service-section">
+                <h2>📱 3. Mobile App Development</h2>
+                
+                <h3>Service Overview</h3>
+                <p>In today's mobile-first world, having a powerful mobile application is essential for business success. We build native and cross-platform mobile applications that deliver exceptional user experiences and drive business results. From concept to App Store/Play Store launch, we handle everything.</p>
+
+                <h3>Types of Apps We Build</h3>
+                <ul>
+                    <li><strong>iOS Apps:</strong> Native apps using Swift/SwiftUI for iPhone and iPad</li>
+                    <li><strong>Android Apps:</strong> Native apps using Kotlin/Java for Android devices</li>
+                    <li><strong>Cross-Platform Apps:</strong> Single codebase for both iOS & Android using React Native or Flutter</li>
+                    <li><strong>Hybrid Apps:</strong> Cost-effective mobile solutions using web technologies</li>
+                    <li><strong>Enterprise Apps:</strong> Internal business apps for employee productivity</li>
+                    <li><strong>Consumer Apps:</strong> B2C apps for retail, services, entertainment</li>
+                </ul>
+
+                <h3>Popular App Categories We Build</h3>
+                <ul>
+                    <li><strong>E-commerce:</strong> Shopping apps with product catalog, cart, payment gateway</li>
+                    <li><strong>On-Demand Services:</strong> Uber-like apps for taxi, food delivery, home services</li>
+                    <li><strong>Social Networking:</strong> Community apps with chat, posts, stories</li>
+                    <li><strong>FinTech:</strong> Banking, payment, investment, cryptocurrency apps</li>
+                    <li><strong>Healthcare:</strong> Telemedicine, fitness tracking, health monitoring</li>
+                    <li><strong>Education:</strong> Learning apps, online courses, student portals</li>
+                    <li><strong>Food & Restaurant:</strong> Food ordering, table booking, delivery tracking</li>
+                    <li><strong>Travel & Booking:</strong> Hotel, flight, cab booking applications</li>
+                    <li><strong>Entertainment:</strong> Video streaming, music apps, gaming</li>
+                </ul>
+
+                <h3>Our App Development Process</h3>
+                <p><strong>Discovery Phase:</strong> Requirement analysis, competitor research, feature planning, wireframing</p>
+                <p><strong>Design Phase:</strong> UI/UX design, prototypes, user flow, design system</p>
+                <p><strong>Development Phase:</strong> Agile development, API integration, backend setup, regular updates</p>
+                <p><strong>Testing Phase:</strong> Functional testing, device testing, performance testing, beta testing</p>
+                <p><strong>Launch Phase:</strong> App Store submission, Play Store submission, app approval, launch</p>
+                <p><strong>Post-Launch:</strong> Monitoring, updates, bug fixes, feature additions, maintenance</p>
+
+                <h3>Technology Stack</h3>
+                <p><strong>iOS:</strong> Swift, SwiftUI, Xcode, CocoaPods</p>
+                <p><strong>Android:</strong> Kotlin, Java, Android Studio, Gradle</p>
+                <p><strong>Cross-Platform:</strong> React Native, Flutter, Xamarin</p>
+                <p><strong>Backend:</strong> Node.js, Spring Boot, Firebase, AWS Amplify</p>
+                <p><strong>Database:</strong> SQLite, Realm, Firebase Realtime Database, PostgreSQL</p>
+                <p><strong>Cloud:</strong> AWS, Google Firebase, Azure Mobile Services</p>
+
+                <h3>Key Features We Implement</h3>
+                <ul>
+                    <li>User authentication (Email, Phone, Social login)</li>
+                    <li>Push notifications (Transactional, Marketing)</li>
+                    <li>In-app payments (Google Pay, Apple Pay, Stripe)</li>
+                    <li>Real-time chat and messaging</li>
+                    <li>GPS and location services</li>
+                    <li>Camera and gallery integration</li>
+                    <li>Barcode/QR code scanning</li>
+                    <li>Offline functionality</li>
+                    <li>Social media sharing</li>
+                    <li>Analytics and crash reporting</li>
+                    <li>Admin dashboard for management</li>
+                </ul>
+
+                <div class="pricing-box">
+                    <h4>💰 Pricing</h4>
+                    <p><strong>Simple App:</strong> ₹2,00,000 - ₹4,00,000 (Basic features, single platform)</p>
+                    <p><strong>Medium Complexity:</strong> ₹4,00,000 - ₹7,00,000 (Advanced features, both platforms)</p>
+                    <p><strong>Complex App:</strong> ₹7,00,000 - ₹15,00,000 (Multiple features, integrations, both platforms)</p>
+                    <p><strong>Enterprise App:</strong> ₹15,00,000+ (Custom requirements, high security)</p>
+                    <p><strong>Timeline:</strong> 2-6 months depending on complexity</p>
+                </div>
+
+                <button class="copy-btn" onclick="copySection('app-dev')">📋 Copy App Development Description</button>
+            </div>
+
+            <!-- Continuing with remaining services in next part... -->
+            
+        </div>
+    </div>
+
+    <script>
+        function scrollToSection(id) {
+            document.getElementById(id).scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
+
+        function copySection(id) {
+            const section = document.getElementById(id);
+            const text = section.innerText;
+            navigator.clipboard.writeText(text).then(() => {
+                alert('Content copied to clipboard!');
+            });
+        }
+    </script>
+</body>
+</html>
+            <!-- B.TECH PROJECTS -->
+            <div id="btech" class="service-section">
+                <h2>🎓 4. B.Tech Final Year Projects</h2>
+                
+                <h3>Service Overview</h3>
+                <p>Your final year project is your first professional portfolio piece and often the most discussed topic in placement interviews. We provide industry-standard, unique B.Tech projects with complete training, documentation, and support. Our projects use the latest technologies and are designed to impress recruiters while helping you genuinely understand what you've built.</p>
+
+                <h3>Why Our Projects Are Different</h3>
+                <ul>
+                    <li><strong>100% Unique:</strong> Not copied from internet or GitHub. Customized to your requirements and syllabus guidelines</li>
+                    <li><strong>Latest Technologies:</strong> 2024-25 relevant tech stacks that recruiters actually look for</li>
+                    <li><strong>Live Deployment:</strong> Your project hosted on cloud with a live URL for impressive demos</li>
+                    <li><strong>Complete Training:</strong> 1-hour live session where we explain every line of code and logic</li>
+                    <li><strong>Interview Preparation:</strong> We teach you how to answer technical questions about your project</li>
+                    <li><strong>GitHub Repository:</strong> Professional repository that shows on your resume</li>
+                    <li><strong>Comprehensive Documentation:</strong> 100+ page report, PPT presentation, synopsis, all IEEE formatted</li>
+                    <li><strong>30-Day Support:</strong> We're available for any questions or modifications until successful submission</li>
+                </ul>
+
+                <h3>Project Domains We Cover</h3>
+                
+                <h4>Web Development Projects</h4>
+                <ul>
+                    <li>E-commerce Platform (Full-featured online store with admin panel)</li>
+                    <li>Social Media Platform (Posts, comments, likes, friend requests)</li>
+                    <li>College Management System (Students, faculty, attendance, exams, results)</li>
+                    <li>Job Portal (Job postings, applications, resume management)</li>
+                    <li>Online Food Ordering System (Restaurant menu, cart, order tracking)</li>
+                    <li>Real Estate Management (Property listings, search, booking)</li>
+                    <li>Hospital Management System (Appointments, patient records, billing)</li>
+                    <li>Library Management System (Books, members, issue/return)</li>
+                </ul>
+
+                <h4>Mobile App Projects</h4>
+                <ul>
+                    <li>Expense Tracker (Income/expense tracking with analytics and charts)</li>
+                    <li>Fitness & Health App (Workout plans, calorie tracking, progress monitoring)</li>
+                    <li>Grocery Delivery App (Product catalog, cart, delivery tracking)</li>
+                    <li>Language Learning App (Lessons, quizzes, progress tracking)</li>
+                    <li>Food Recipe App (Recipe search, favorites, cooking instructions)</li>
+                    <li>Real-time Chat Application (One-on-one and group messaging)</li>
+                </ul>
+
+                <h4>AI/ML Projects</h4>
+                <ul>
+                    <li>Disease Prediction System (Using patient symptoms and medical history)</li>
+                    <li>Stock Price Prediction (Using historical data and ML algorithms)</li>
+                    <li>Fake News Detection (NLP-based classification system)</li>
+                    <li>Crop Recommendation System (Based on soil and weather conditions)</li>
+                    <li>Chatbot with NLP (Intelligent conversation bot for customer support)</li>
+                    <li>Image Recognition System (Object detection, face recognition)</li>
+                    <li>Sentiment Analysis (Analyzing customer reviews and social media)</li>
+                    <li>Recommendation System (Movies, products, books recommendations)</li>
+                </ul>
+
+                <h4>IoT & Embedded Systems</h4>
+                <ul>
+                    <li>Smart Home Automation (Control home appliances via mobile app)</li>
+                    <li>Agriculture Monitoring System (Soil moisture, temperature, automated irrigation)</li>
+                    <li>Health Monitoring System (Heart rate, temperature, fall detection)</li>
+                    <li>Smart Parking System (Available parking detection and booking)</li>
+                    <li>Industrial Safety System (Gas detection, fire alarm, monitoring)</li>
+                </ul>
+
+                <h4>Blockchain Projects</h4>
+                <ul>
+                    <li>Blockchain-based Voting System (Secure, transparent, tamper-proof voting)</li>
+                    <li>Supply Chain Management (Product tracking from manufacturer to customer)</li>
+                    <li>Cryptocurrency Wallet (Digital wallet with transaction history)</li>
+                    <li>Document Verification System (Secure certificate verification)</li>
+                </ul>
+
+                <h3>Technologies We Use</h3>
+                <p><strong>Frontend:</strong> React.js, Angular, Vue.js, HTML5, CSS3, JavaScript, Bootstrap, Material-UI</p>
+                <p><strong>Backend:</strong> Spring Boot (Java), Node.js, Python (Django/Flask), PHP (Laravel)</p>
+                <p><strong>Mobile:</strong> React Native, Flutter, Android (Kotlin/Java), iOS (Swift)</p>
+                <p><strong>Databases:</strong> MySQL, PostgreSQL, MongoDB, Firebase</p>
+                <p><strong>AI/ML:</strong> Python, TensorFlow, scikit-learn, Keras, OpenCV, NLTK</p>
+                <p><strong>IoT:</strong> Arduino, Raspberry Pi, ESP8266, NodeMCU, Sensors</p>
+                <p><strong>Blockchain:</strong> Solidity, Ethereum, Hyperledger, Web3.js</p>
+                <p><strong>Cloud:</strong> AWS, Heroku, Firebase, Netlify, Vercel</p>
+
+                <h3>What's Included in Every Project</h3>
+                <ul>
+                    <li><strong>Complete Source Code:</strong> Well-commented, clean code following best practices</li>
+                    <li><strong>GitHub Repository:</strong> Professional repo with README, commits history</li>
+                    <li><strong>Database Scripts:</strong> SQL files or database setup instructions</li>
+                    <li><strong>Project Documentation:</strong> 100+ page detailed report (IEEE format)</li>
+                    <li><strong>PowerPoint Presentation:</strong> 30-40 slides for project presentation</li>
+                    <li><strong>Synopsis:</strong> 5-10 page project overview for submission</li>
+                    <li><strong>Video Tutorials:</strong> Installation and usage video guides</li>
+                    <li><strong>Live Explanation Session:</strong> 1-hour personalized training</li>
+                    <li><strong>Installation Guide:</strong> Step-by-step setup instructions</li>
+                    <li><strong>User Manual:</strong> How to use the application</li>
+                    <li><strong>Testing Document:</strong> Test cases and results</li>
+                    <li><strong>30-Day Support:</strong> Email and WhatsApp support for queries</li>
+                </ul>
+
+                <h3>Our Delivery Process</h3>
+                <p><strong>Day 0-1:</strong> Requirement gathering, domain selection, project finalization</p>
+                <p><strong>Day 2-7:</strong> Development with your specifications and college guidelines</p>
+                <p><strong>Day 8-9:</strong> Documentation preparation (Report, PPT, Synopsis)</p>
+                <p><strong>Day 10:</strong> First delivery - You review everything</p>
+                <p><strong>Day 11:</strong> Live training session - We explain the entire project</p>
+                <p><strong>Day 12+:</strong> Support period - We help with any issues or questions</p>
+
+                <div class="pricing-box">
+                    <h4>💰 Pricing</h4>
+                    <p><strong>Basic Projects (Web/Android):</strong> ₹8,000 - ₹12,000</p>
+                    <p>Simple applications with basic features</p>
+                    
+                    <p><strong>Advanced Projects (AI/ML/IoT):</strong> ₹15,000 - ₹20,000</p>
+                    <p>Complex applications with advanced algorithms</p>
+                    
+                    <p><strong>Super Complex (Blockchain/Advanced AI):</strong> ₹22,000 - ₹25,000</p>
+                    <p>Cutting-edge technologies and complex implementations</p>
+                    
+                    <p><strong>Payment Terms:</strong></p>
+                    <p>• 50% advance (₹4,000 - ₹12,500) - Project starts</p>
+                    <p>• 50% after delivery (₹4,000 - ₹12,500) - After you're satisfied</p>
+                    
+                    <p><strong>Group Discount:</strong> 10% off for groups of 3+ students</p>
+                </div>
+
+                <h3>Success Statistics</h3>
+                <div class="highlight-box">
+                    <p><strong>500+ Projects Delivered</strong> across all engineering branches</p>
+                    <p><strong>95% Students Got A Grade</strong> in their final year project evaluation</p>
+                    <p><strong>80% Got Interview Calls</strong> because of their impressive project</p>
+                    <p><strong>Zero Rejection Rate</strong> - All projects approved by colleges on first submission</p>
+                </div>
+
+                <h3>Student Testimonials</h3>
+                <div class="highlight-box">
+                    <p><strong>"I was worried about my project, but SmartGrow delivered an amazing AI-based disease prediction system. Got A grade and 3 interview calls!" - Priya Sharma, CBIT</strong></p>
+                    <p><strong>"The training session was so detailed that I could answer every question in my project viva. Highly recommend!" - Rahul Verma, VJIT</strong></p>
+                    <p><strong>"My blockchain voting system impressed everyone. Even professors asked for the GitHub link!" - Sneha Reddy, JNTUH</strong></p>
+                </div>
+
+                <button class="copy-btn" onclick="copySection('btech')">📋 Copy B.Tech Projects Description</button>
+            </div>
+
+            <!-- CRT PROGRAM -->
+            <div id="crt" class="service-section">
+                <h2>🎯 5. Campus Recruitment Training (CRT) Program</h2>
+                
+                <h3>Service Overview</h3>
+                <p>The Campus Recruitment Training (CRT) program is our flagship training initiative designed to transform engineering students into placement-ready professionals in just 60 days. With an industry-leading 87% placement success rate, our program systematically addresses every aspect of campus recruitment - from Data Structures & Algorithms to soft skills and mock interviews.</p>
+
+                <p>Unlike theoretical college courses, our CRT program focuses on practical, interview-oriented training. We don't just teach concepts; we ensure you can solve problems under pressure, explain your approach clearly, and present yourself confidently in every interview round.</p>
+
+                <h3>Why Students Choose Our CRT Program</h3>
+                <ul>
+                    <li><strong>87% Placement Success Rate:</strong> Industry-leading compared to 40-60% average</li>
+                    <li><strong>Average Package ₹4.5 LPA:</strong> Significantly higher than non-trained students</li>
+                    <li><strong>Expert Faculty:</strong> Industry professionals with 8+ years experience, not fresh graduates</li>
+                    <li><strong>Small Batch Size:</strong> Maximum 30 students per batch for personalized attention</li>
+                    <li><strong>Practical Focus:</strong> 70% hands-on practice vs 30% theory</li>
+                    <li><strong>500+ Coding Problems:</strong> Curated problem set covering all interview patterns</li>
+                    <li><strong>Real Mock Interviews:</strong> Simulated interview environment with detailed feedback</li>
+                    <li><strong>Resume Building:</strong> Professional, ATS-friendly resume that gets noticed</li>
+                    <li><strong>LinkedIn Optimization:</strong> Profile optimization for recruiter searches</li>
+                    <li><strong>Placement Assistance:</strong> Job referrals, interview scheduling support</li>
+                </ul>
+
+                <h3>Complete 60-Day Curriculum</h3>
+                
+                <h4>Week 1-3: Data Structures & Algorithms (24 days)</h4>
+                <p>This is the core of technical interviews. We cover:</p>
+                <ul>
+                    <li><strong>Week 1 - Foundations:</strong> Arrays, Strings, Hashing, Two Pointer Technique, Sliding Window, Sorting Algorithms, Binary Search</li>
+                    <li><strong>Week 2 - Intermediate:</strong> Linked Lists (Single, Double, Circular), Stacks, Queues, Trees (Binary Trees, BST), Tree Traversals (Inorder, Preorder, Postorder, Level Order)</li>
+                    <li><strong>Week 3 - Advanced:</strong> Graphs (BFS, DFS, Shortest Path), Heaps & Priority Queues, Dynamic Programming (Memoization, Tabulation), Backtracking, Greedy Algorithms</li>
+                    <li><strong>Daily Practice:</strong> 5-10 problems per day on LeetCode, HackerRank, CodeChef</li>
+                </ul>
+
+                <h4>Week 4-5: Programming Languages (12 days)</h4>
+                <p>Master Java or Python for technical interviews:</p>
+                <ul>
+                    <li><strong>Java Track:</strong> OOPS Concepts, Inheritance, Polymorphism, Collections Framework (ArrayList, HashMap, HashSet), Exception Handling, Multithreading Basics, Java 8 Features (Lambda, Streams)</li>
+                    <li><strong>Python Track:</strong> Python Fundamentals, List Comprehensions, OOPS in Python, Important Libraries (Collections, itertools), File Handling, Regular Expressions</li>
+                    <li><strong>Common for Both:</strong> 50+ coding problems, Interview question patterns, Code optimization techniques, Writing clean, readable code</li>
+                </ul>
+
+                <h4>Week 6: System Design Fundamentals (6 days)</h4>
+                <p>Essential for product-based company interviews:</p>
+                <ul>
+                    <li>Introduction to System Design and Scalability</li>
+                    <li>Load Balancing and Caching Strategies</li>
+                    <li>Database Design (SQL vs NoSQL, Normalization)</li>
+                    <li>API Design Principles and RESTful Services</li>
+                    <li>Microservices Architecture Basics</li>
+                    <li>Sample Designs: URL Shortener, Twitter Feed, Instagram Stories</li>
+                </ul>
+
+                <h4>Week 7: Quantitative Aptitude & Logical Reasoning (6 days)</h4>
+                <ul>
+                    <li><strong>Quantitative:</strong> Number Systems, Percentages, Profit & Loss, Time & Work, Time & Distance, Ratios & Proportions, Permutations & Combinations, Probability, Series & Progressions</li>
+                    <li><strong>Logical Reasoning:</strong> Blood Relations, Coding-Decoding, Puzzles, Seating Arrangements, Syllogisms, Data Interpretation, Analytical Reasoning</li>
+                    <li><strong>Practice:</strong> 200+ problems, Time management techniques, Quick calculation methods, Mock aptitude tests</li>
+                </ul>
+
+                <h4>Week 8: Soft Skills & Communication (6 days)</h4>
+                <ul>
+                    <li><strong>Communication Skills:</strong> English communication improvement, Email writing, Presentation skills, Active listening</li>
+                    <li><strong>Group Discussion:</strong> GD techniques and strategies, Common topics (Tech, Social, Business), Leadership and participation, Handling disagreements</li>
+                    <li><strong>HR Interview:</strong> Tell me about yourself (perfect answer), Strengths and weaknesses, Career goals, Behavioral questions (STAR method), Salary negotiation basics</li>
+                    <li><strong>Personal Branding:</strong> Resume building (ATS-friendly), LinkedIn profile optimization, GitHub portfolio creation, Cover letter writing</li>
+                </ul>
+
+                <h4>Mock Interviews (Throughout Program)</h4>
+                <ul>
+                    <li><strong>Week 3:</strong> First mock interview - DSA basics assessment</li>
+                    <li><strong>Week 5:</strong> Second mock interview - DSA + Programming combined</li>
+                    <li><strong>Week 7:</strong> Third mock interview - Complete technical round</li>
+                    <li><strong>Week 8:</strong> HR mock interviews - Behavioral questions</li>
+                    <li><strong>Each Interview:</strong> 45-60 minutes, Video recorded for self-review, Detailed feedback report, Personalized improvement plan</li>
+                </ul>
+
+                <h3>Learning Resources Provided</h3>
+                <ul>
+                    <li>Comprehensive study materials (PDF notes, presentations)</li>
+                    <li>Lifetime access to video recordings of all sessions</li>
+                    <li>Practice problem sets (500+ curated problems with solutions)</li>
+                    <li>Cheat sheets and quick reference guides</li>
+                    <li>Company-wise previous year interview questions</li>
+                    <li>LeetCode Premium access (worth ₹3,000/year)</li>
+                    <li>Dedicated WhatsApp group for instant doubt resolution</li>
+                    <li>Two one-on-one mentorship sessions during the program</li>
+                </ul>
+
+                <h3>Training Methodology</h3>
+                <ul>
+                    <li><strong>30% Concept Explanation:</strong> Clear, structured teaching with real-world examples</li>
+                    <li><strong>40% Live Coding:</strong> Instructor codes in real-time explaining thought process</li>
+                    <li><strong>20% Student Practice:</strong> Immediate hands-on practice after each concept</li>
+                    <li><strong>5% Code Reviews:</strong> Peer and instructor reviews to improve coding style</li>
+                    <li><strong>3% Doubt Sessions:</strong> Dedicated time for clarifying all questions</li>
+                    <li><strong>2% Weekly Assessments:</strong> Tests to track progress and identify weak areas</li>
+                </ul>
+
+                <div class="pricing-box">
+                    <h4>💰 Investment & ROI</h4>
+                    <p><strong>Regular Fee:</strong> ₹8,999 per student</p>
+                    <p><strong>Early Bird Offer:</strong> ₹6,999 (Save ₹2,000) - Enroll 1 month before batch starts</p>
+                    <p><strong>Group Discount:</strong> ₹6,499 per student for groups of 3+</p>
+                    
+                    <p><strong>Return on Investment:</strong></p>
+                    <p>Investment: ₹6,999 (Early Bird)</p>
+                    <p>Average package increase: ₹3.5L → ₹4.5L (₹1 lakh extra per year)</p>
+                    <p>Monthly income difference: ₹8,333</p>
+                    <p><strong>ROI Recovery: Less than 1 month of salary!</strong></p>
+                    
+                    <p><strong>Lifetime Value:</strong> Skills compound over 30+ year career</p>
+                </div>
+
+                <h3>Placement Statistics</h3>
+                <div class="highlight-box">
+                    <p><strong>250+ Students Trained</strong> successfully across multiple batches</p>
+                    <p><strong>87% Placement Rate</strong> compared to 40-60% industry average</p>
+                    <p><strong>Average Package: ₹4.5 LPA</strong> vs ₹3.5 LPA for non-trained</p>
+                    <p><strong>Highest Package: ₹12 LPA</strong> (Amazon) - Achieved by our student</p>
+                    <p><strong>Companies:</strong> TCS, Wipro, Infosys, Capgemini, Accenture, Cognizant, Tech Mahindra, HCL, Mindtree, Amazon, Microsoft, Flipkart, Paytm</p>
+                </div>
+
+                <h3>Batch Details</h3>
+                <p><strong>Duration:</strong> 60 days (8 weeks) - Monday to Saturday</p>
+                <p><strong>Training Hours:</strong> 240+ hours (4 hours/day)</p>
+                <p><strong>Batch Size:</strong> Maximum 30 students (limited seats for quality)</p>
+                <p><strong>Mode:</strong> Hybrid - Offline (Hyderabad) + Online (Live sessions)</p>
+                <p><strong>Timings:</strong> Morning Batch (9 AM - 1 PM) or Evening Batch (5 PM - 9 PM)</p>
+
+                <button class="copy-btn" onclick="copySection('crt')">📋 Copy CRT Program Description</button>
+            </div>
+
+            <!-- Continue with remaining services... -->
+            
+        </div>
+    </div>
+
+    <script>
+        function scrollTo(id) {
+            document.getElementById(id).scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
+        function copySection(id) {
+            const section = document.getElementById(id);
+            const text = section.innerText;
+            navigator.clipboard.writeText(text).then(() => {
+                alert('✅ Content copied to clipboard! Paste it wherever you need.');
+            });
+        }
+    </script>
+</body>
+</html>
+
+            <!-- INTERNSHIP PROGRAM -->
+            <div id="internship" class="service-section">
+                <h2>🚀 6. Internship Program</h2>
+                
+                <h3>Service Overview</h3>
+                <p>At SmartGrow Infotech, interns are not coffee-fetchers or photocopying assistants. Our interns are junior developers who work on real client projects, write production-ready code, and learn from experienced professionals. This is hands-on, practical experience that builds your resume and prepares you for full-time roles.</p>
+
+                <p>We offer internships in multiple tracks covering the most in-demand technologies. Whether you're interested in full-stack development, mobile apps, data engineering, DevOps, or AI/ML, we have a path for you. Top performers receive Pre-Placement Offers (PPO) to join us full-time after graduation.</p>
+
+                <h3>Internship Tracks Available</h3>
+                
+                <h4>1. Full-Stack Development</h4>
+                <p><strong>Technologies:</strong> Java, Spring Boot, React.js, PostgreSQL, AWS, Docker</p>
+                <p><strong>What You'll Do:</strong></p>
+                <ul>
+                    <li>Build REST APIs using Spring Boot</li>
+                    <li>Create responsive UIs with React</li>
+                    <li>Design and optimize databases</li>
+                    <li>Deploy applications on AWS</li>
+                    <li>Work with Git for version control</li>
+                    <li>Participate in code reviews</li>
+                </ul>
+                <p><strong>Stipend:</strong> ₹8,000 - ₹15,000/month (performance-based)</p>
+
+                <h4>2. Mobile App Development</h4>
+                <p><strong>Technologies:</strong> React Native, Flutter, Firebase, REST APIs</p>
+                <p><strong>What You'll Do:</strong></p>
+                <ul>
+                    <li>Build cross-platform mobile apps</li>
+                    <li>Integrate APIs and backend services</li>
+                    <li>Implement push notifications</li>
+                    <li>Handle app store deployment</li>
+                    <li>Optimize app performance</li>
+                    <li>Write unit and integration tests</li>
+                </ul>
+                <p><strong>Stipend:</strong> ₹7,000 - ₹12,000/month</p>
+
+                <h4>3. Data Engineering</h4>
+                <p><strong>Technologies:</strong> Python, Apache Kafka, Apache Airflow, Spark, AWS, PostgreSQL</p>
+                <p><strong>What You'll Do:</strong></p>
+                <ul>
+                    <li>Build data pipelines with Airflow</li>
+                    <li>Process real-time data with Kafka</li>
+                    <li>Perform data analysis with Python</li>
+                    <li>Create ETL workflows</li>
+                    <li>Optimize database queries</li>
+                    <li>Generate data reports and dashboards</li>
+                </ul>
+                <p><strong>Stipend:</strong> ₹10,000 - ₹15,000/month</p>
+
+                <h4>4. DevOps & Cloud</h4>
+                <p><strong>Technologies:</strong> AWS, Docker, Kubernetes, Jenkins, Terraform, Linux</p>
+                <p><strong>What You'll Do:</strong></p>
+                <ul>
+                    <li>Set up CI/CD pipelines</li>
+                    <li>Deploy applications on AWS</li>
+                    <li>Containerize applications with Docker</li>
+                    <li>Manage Kubernetes clusters</li>
+                    <li>Monitor application performance</li>
+                    <li>Automate infrastructure with Terraform</li>
+                </ul>
+                <p><strong>Stipend:</strong> ₹8,000 - ₹15,000/month</p>
+
+                <h4>5. AI/ML Engineering</h4>
+                <p><strong>Technologies:</strong> Python, TensorFlow, PyTorch, scikit-learn, Pandas, NumPy</p>
+                <p><strong>What You'll Do:</strong></p>
+                <ul>
+                    <li>Build ML models for predictions</li>
+                    <li>Work on NLP and computer vision projects</li>
+                    <li>Clean and preprocess data</li>
+                    <li>Deploy ML models as APIs</li>
+                    <li>Optimize model performance</li>
+                    <li>Document ML experiments</li>
+                </ul>
+                <p><strong>Stipend:</strong> ₹10,000 - ₹15,000/month</p>
+
+                <h3>What Makes Our Internship Different</h3>
+                <ul>
+                    <li><strong>Real Projects, Not Toy Apps:</strong> Work on actual client projects that go to production</li>
+                    <li><strong>Experienced Mentors:</strong> Learn from developers with 8+ years industry experience</li>
+                    <li><strong>Code Reviews:</strong> Get your code reviewed daily, learn best practices and clean code</li>
+                    <li><strong>Daily Standups:</strong> Experience Agile methodology with daily team sync-ups</li>
+                    <li><strong>Professional Environment:</strong> Work like a real developer, not a student</li>
+                    <li><strong>Portfolio Building:</strong> Build 3-5 professional projects for your resume</li>
+                    <li><strong>Industry Exposure:</strong> Understand how software companies actually work</li>
+                    <li><strong>Certificate & Recommendation:</strong> Valued by recruiters and HR managers</li>
+                    <li><strong>PPO Opportunity:</strong> 60% of top performers get full-time job offers</li>
+                    <li><strong>Alumni Network:</strong> Join our community of 250+ alumni working in top companies</li>
+                </ul>
+
+                <h3>Internship Structure</h3>
+                <p><strong>Week 1-2: Onboarding & Training</strong></p>
+                <ul>
+                    <li>Introduction to company processes and tools</li>
+                    <li>Git and version control training</li>
+                    <li>Code review guidelines and standards</li>
+                    <li>Setup development environment</li>
+                    <li>Small task assignments to get started</li>
+                </ul>
+
+                <p><strong>Week 3-8: Active Development</strong></p>
+                <ul>
+                    <li>Assigned to actual client projects</li>
+                    <li>Work on features and bug fixes</li>
+                    <li>Participate in code reviews</li>
+                    <li>Daily standups with team</li>
+                    <li>Weekly progress reviews with mentor</li>
+                </ul>
+
+                <p><strong>Week 9-12: Advanced Work</strong></p>
+                <ul>
+                    <li>Take ownership of complete features</li>
+                    <li>Lead small modules independently</li>
+                    <li>Present work in team meetings</li>
+                    <li>Contribute to technical decisions</li>
+                    <li>Prepare final project presentation</li>
+                </ul>
+
+                <h3>Requirements to Apply</h3>
+                <ul>
+                    <li>Currently in 2nd, 3rd, or final year of engineering</li>
+                    <li>Basic programming knowledge in any language (Java/Python/JavaScript)</li>
+                    <li>Commitment to work full-time (6 days/week) during internship period</li>
+                    <li>Hunger to learn and grow as a developer</li>
+                    <li>Good communication skills (English)</li>
+                    <li>Own laptop required</li>
+                </ul>
+
+                <h3>Selection Process</h3>
+                <p><strong>Step 1:</strong> Online application with resume</p>
+                <p><strong>Step 2:</strong> Online coding test (DSA and programming)</p>
+                <p><strong>Step 3:</strong> Technical interview (problem-solving, basics)</p>
+                <p><strong>Step 4:</strong> HR interview (communication, commitment)</p>
+                <p><strong>Step 5:</strong> Offer letter and onboarding</p>
+
+                <div class="pricing-box">
+                    <h4>💰 Internship Compensation</h4>
+                    <p><strong>Stipend Range:</strong> ₹5,000 - ₹15,000/month</p>
+                    <p>Based on performance and track chosen</p>
+                    
+                    <p><strong>Performance Reviews:</strong> Monthly evaluations can increase stipend</p>
+                    <p><strong>Conversion Rate:</strong> 60% of top performers get PPO (Pre-Placement Offer)</p>
+                    <p><strong>Full-time Salary:</strong> ₹3.5 - ₹6 LPA after PPO conversion</p>
+                </div>
+
+                <h3>Success Stories</h3>
+                <div class="highlight-box">
+                    <p><strong>"The internship at SmartGrow was life-changing. I learned more in 3 months than 3 years of college. Got PPO and now working as Junior Developer!" - Karthik Rao, MGIT</strong></p>
+                    <p><strong>"Best decision ever. Worked on real e-commerce project used by thousands of users. Resume looked amazing in placements!" - Anjali Reddy, CBIT</strong></p>
+                    <p><strong>"From zero industry knowledge to confident developer in 6 months. The mentorship was incredible!" - Vamsi Krishna, VJIT</strong></p>
+                </div>
+
+                <h3>How to Apply</h3>
+                <p><strong>Email:</strong> <a href="/cdn-cgi/l/email-protection" class="email-plain" >[email&#160;protected]</a></p>
+                <p><strong>Subject Line:</strong> Internship Application - [Your Track] - [Your Name]</p>
+                <p><strong>Attach:</strong> Resume + Cover letter explaining why you want to intern</p>
+                <p><strong>Applications Open:</strong> Year-round (continuous intake)</p>
+                <p><strong>Start Date:</strong> Flexible based on your availability</p>
+
+                <button class="copy-btn" onclick="copySection('internship')">📋 Copy Internship Description</button>
+            </div>
+
+            <!-- TECHNOLOGY CONSULTANCY -->
+            <div id="consultancy" class="service-section">
+                <h2>💡 7. Technology Consultancy</h2>
+                
+                <h3>Service Overview</h3>
+                <p>Making the right technology decisions can save months of development time and lakhs of rupees. Our technology consultancy services provide expert guidance from experienced professionals who have built, scaled, and maintained software systems handling millions of users. We help startups and businesses make informed decisions about architecture, tech stack, scaling, security, and more.</p>
+
+                <h3>When You Need Technology Consultancy</h3>
+                <ul>
+                    <li>Starting a new software project and unsure about tech stack</li>
+                    <li>Existing system is slow and you don't know how to fix it</li>
+                    <li>Planning to scale from 1,000 to 100,000+ users</li>
+                    <li>Getting conflicting advice from different developers</li>
+                    <li>Need to pass a security audit for compliance</li>
+                    <li>Considering microservices but not sure if it's right</li>
+                    <li>Hiring a technical team and need to evaluate candidates</li>
+                    <li>Existing product has too many bugs and technical debt</li>
+                    <li>Want to migrate to cloud but don't know where to start</li>
+                    <li>Need a CTO-level perspective without hiring a full-time CTO</li>
+                </ul>
+
+                <h3>Our Consulting Services</h3>
+                
+                <h4>1. Technology Stack Selection</h4>
+                <p>Choosing the right technologies is critical for long-term success.</p>
+                <ul>
+                    <li>Evaluate your specific requirements and constraints</li>
+                    <li>Recommend frontend, backend, database, and cloud technologies</li>
+                    <li>Consider team expertise and hiring market</li>
+                    <li>Factor in cost, scalability, and maintenance</li>
+                    <li>Provide detailed justification for each recommendation</li>
+                </ul>
+                <p><strong>Deliverable:</strong> Technology stack recommendation document with pros/cons</p>
+
+                <h4>2. Architecture Review & Design</h4>
+                <p>Ensure your system architecture is scalable, maintainable, and secure.</p>
+                <ul>
+                    <li>Review existing architecture for bottlenecks</li>
+                    <li>Design new architecture for greenfield projects</li>
+                    <li>Microservices vs Monolith decision guidance</li>
+                    <li>Database design and schema review</li>
+                    <li>API design and versioning strategy</li>
+                    <li>Caching and performance optimization</li>
+                </ul>
+                <p><strong>Deliverable:</strong> Architecture diagrams, design documents, implementation roadmap</p>
+
+                <h4>3. Code Review & Quality Audit</h4>
+                <p>Identify issues before they become expensive problems.</p>
+                <ul>
+                    <li>Review codebase for quality, security, and performance</li>
+                    <li>Identify technical debt and prioritize fixes</li>
+                    <li>Check for OWASP security vulnerabilities</li>
+                    <li>Evaluate code maintainability and documentation</li>
+                    <li>Provide actionable recommendations with priority levels</li>
+                </ul>
+                <p><strong>Deliverable:</strong> Comprehensive audit report with prioritized action items</p>
+
+                <h4>4. Performance Optimization</h4>
+                <p>Make slow applications fast and responsive.</p>
+                <ul>
+                    <li>Profile application to identify bottlenecks</li>
+                    <li>Database query optimization</li>
+                    <li>Frontend performance tuning</li>
+                    <li>Caching strategy implementation</li>
+                    <li>CDN and asset optimization</li>
+                    <li>Load testing and capacity planning</li>
+                </ul>
+                <p><strong>Deliverable:</strong> Performance optimization report with specific fixes</p>
+
+                <h4>5. Security Assessment</h4>
+                <p>Protect your application and user data from threats.</p>
+                <ul>
+                    <li>OWASP Top 10 vulnerability assessment</li>
+                    <li>Authentication and authorization review</li>
+                    <li>Data encryption and privacy compliance</li>
+                    <li>API security best practices</li>
+                    <li>Penetration testing recommendations</li>
+                    <li>Security incident response planning</li>
+                </ul>
+                <p><strong>Deliverable:</strong> Security assessment report with remediation steps</p>
+
+                <h4>6. Cloud Migration Strategy</h4>
+                <p>Move to AWS/Azure/GCP smoothly and cost-effectively.</p>
+                <ul>
+                    <li>Evaluate cloud readiness of existing application</li>
+                    <li>Choose right cloud provider (AWS vs Azure vs GCP)</li>
+                    <li>Design cloud architecture and services selection</li>
+                    <li>Cost estimation and optimization</li>
+                    <li>Migration roadmap with minimal downtime</li>
+                    <li>Post-migration monitoring setup</li>
+                </ul>
+                <p><strong>Deliverable:</strong> Cloud migration plan with timelines and cost estimates</p>
+
+                <h4>7. Scaling Strategy</h4>
+                <p>Prepare your system to handle 10x, 100x, or 1000x traffic.</p>
+                <ul>
+                    <li>Identify scaling bottlenecks in current system</li>
+                    <li>Design horizontal and vertical scaling approach</li>
+                    <li>Database scaling (read replicas, sharding)</li>
+                    <li>Load balancing and auto-scaling setup</li>
+                    <li>Caching layers (Redis, CDN)</li>
+                    <li>Queue systems for async processing</li>
+                </ul>
+                <p><strong>Deliverable:</strong> Scaling roadmap with implementation phases</p>
+
+                <h4>8. Team Capability Assessment</h4>
+                <p>Evaluate your technical team's skills and identify gaps.</p>
+                <ul>
+                    <li>Technical skill assessment of developers</li>
+                    <li>Code quality and best practices review</li>
+                    <li>Identify training needs</li>
+                    <li>Recommend hiring plan for skill gaps</li>
+                    <li>Team structure and roles optimization</li>
+                </ul>
+                <p><strong>Deliverable:</strong> Team assessment report with recommendations</p>
+
+                <h4>9. DevOps Implementation</h4>
+                <p>Set up modern development workflows for faster, safer releases.</p>
+                <ul>
+                    <li>CI/CD pipeline setup (Jenkins, GitHub Actions)</li>
+                    <li>Containerization with Docker</li>
+                    <li>Orchestration with Kubernetes</li>
+                    <li>Infrastructure as Code (Terraform)</li>
+                    <li>Monitoring and alerting setup</li>
+                    <li>Automated testing integration</li>
+                </ul>
+                <p><strong>Deliverable:</strong> DevOps implementation plan with tool recommendations</p>
+
+                <h4>10. Technical Due Diligence</h4>
+                <p>For investors evaluating a technology company or product.</p>
+                <ul>
+                    <li>Codebase quality and architecture review</li>
+                    <li>Technical debt assessment</li>
+                    <li>Team capability evaluation</li>
+                    <li>Scalability and performance analysis</li>
+                    <li>Security and compliance review</li>
+                    <li>Technology risks identification</li>
+                </ul>
+                <p><strong>Deliverable:</strong> Due diligence report for investment decisions</p>
+
+                <h3>Our Approach</h3>
+                <p><strong>Step 1: Discovery Call (Free - 30 minutes)</strong></p>
+                <p>Understand your situation, challenges, and goals</p>
+
+                <p><strong>Step 2: Proposal & Scope</strong></p>
+                <p>Define scope of work, timeline, and pricing</p>
+
+                <p><strong>Step 3: Deep Dive Analysis</strong></p>
+                <p>Review systems, code, documentation, and team</p>
+
+                <p><strong>Step 4: Recommendations & Roadmap</strong></p>
+                <p>Provide detailed recommendations with implementation plan</p>
+
+                <p><strong>Step 5: Q&A Session</strong></p>
+                <p>Answer questions and clarify recommendations</p>
+
+                <p><strong>Step 6: Follow-up Support (Optional)</strong></p>
+                <p>Help with implementation or provide ongoing advisory</p>
+
+                <div class="pricing-box">
+                    <h4>💰 Consulting Fees</h4>
+                    <p><strong>Hourly Consulting:</strong> ₹5,000/hour</p>
+                    <p>For quick consultations and Q&A sessions</p>
+                    
+                    <p><strong>Project-Based Consulting:</strong> ₹25,000 - ₹1,00,000</p>
+                    <p>For comprehensive reviews and strategy documents</p>
+                    
+                    <p><strong>Monthly Retainer:</strong> ₹50,000 - ₹2,00,000/month</p>
+                    <p>For ongoing CTO-level advisory and support</p>
+                    
+                    <p><strong>First Consultation:</strong> FREE - Contact: <a href="/cdn-cgi/l/email-protection" class="email-plain" >[email&#160;protected]</a> | +91 9063935182 (30 minutes)</p>
+                    <p>No obligation - understand if we can help you</p>
+                </div>
+
+                <h3>Who Benefits Most</h3>
+                <ul>
+                    <li><strong>Startups:</strong> Make right technology decisions from day one</li>
+                    <li><strong>Growing Companies:</strong> Scale systems to handle growth</li>
+                    <li><strong>Non-Technical Founders:</strong> Get CTO-level guidance without hiring full-time</li>
+                    <li><strong>Businesses with Legacy Systems:</strong> Modernize outdated technology</li>
+                    <li><strong>Companies Hiring Developers:</strong> Evaluate technical candidates properly</li>
+                    <li><strong>Investors:</strong> Technical due diligence before investments</li>
+                </ul>
+
+                <h3>Success Stories</h3>
+                <div class="highlight-box">
+                    <p><strong>Startup saved ₹8 lakhs:</strong> Advised against microservices for their 10-user MVP. Recommended simpler monolith. Saved 6 months of over-engineering.</p>
+                    <p><strong>E-commerce site 10x faster:</strong> Identified N+1 query problem and improper caching. Site load time reduced from 8 seconds to 0.8 seconds.</p>
+                    <p><strong>Passed security audit on first try:</strong> Guided through fixing all OWASP vulnerabilities. Client passed SOC 2 audit successfully.</p>
+                </div>
+
+      
+            <!-- DIGITAL MARKETING -->
+            <div id="digital-marketing" class="service-section">
+                <h2>📈 8. Digital Marketing Services</h2>
+                
+                <h3>Service Overview</h3>
+                <p>Having a great product or service is only half the battle - you need customers to know about it. Our digital marketing services help businesses reach their target audience, generate qualified leads, and convert them into paying customers. We use data-driven strategies across multiple channels to maximize ROI and grow your business online.</p>
+
+                <p>Unlike generic marketing agencies, we understand technology businesses deeply. We speak your language, understand your product, and know how to market to technical and non-technical audiences effectively.</p>
+
+                <h3>Our Digital Marketing Services</h3>
+
+                <h4>1. Search Engine Optimization (SEO)</h4>
+                <p>Rank on Google's first page and get organic traffic for years.</p>
+                <ul>
+                    <li><strong>Keyword Research:</strong> Identify high-value keywords your customers are searching for</li>
+                    <li><strong>On-Page SEO:</strong> Optimize website content, meta tags, headers, images for search engines</li>
+                    <li><strong>Technical SEO:</strong> Fix site speed, mobile-friendliness, crawlability, schema markup</li>
+                    <li><strong>Content Strategy:</strong> Create SEO-optimized blog posts, guides, and landing pages</li>
+                    <li><strong>Link Building:</strong> Build high-quality backlinks from authoritative websites</li>
+                    <li><strong>Local SEO:</strong> Optimize Google My Business, local citations for local searches</li>
+                    <li><strong>Competitor Analysis:</strong> Study what's working for competitors and do better</li>
+                    <li><strong>Monthly Reporting:</strong> Track rankings, traffic, conversions with detailed reports</li>
+                </ul>
+                <p><strong>Results:</strong> 3-6 months to see significant traffic increase. Typical ROI: 300-500%</p>
+
+                <h4>2. Social Media Marketing</h4>
+                <p>Build engaged communities and generate leads from social platforms.</p>
+                <ul>
+                    <li><strong>Strategy Development:</strong> Create platform-specific strategies (LinkedIn, Instagram, Facebook, Twitter)</li>
+                    <li><strong>Content Creation:</strong> Design posts, graphics, videos, reels, stories</li>
+                    <li><strong>Content Calendar:</strong> Plan and schedule 30-60 posts per month</li>
+                    <li><strong>Community Management:</strong> Respond to comments, messages, engage with audience</li>
+                    <li><strong>Paid Social Ads:</strong> Run targeted ad campaigns on Facebook, Instagram, LinkedIn</li>
+                    <li><strong>Influencer Marketing:</strong> Partner with relevant influencers for brand awareness</li>
+                    <li><strong>Analytics & Reporting:</strong> Track engagement, reach, followers, leads generated</li>
+                </ul>
+                <p><strong>Platforms:</strong> LinkedIn (B2B), Instagram (B2C), Facebook, Twitter, YouTube</p>
+
+                <h4>3. Google Ads (PPC)</h4>
+                <p>Get immediate traffic and leads with paid search advertising.</p>
+                <ul>
+                    <li><strong>Campaign Setup:</strong> Search ads, display ads, remarketing campaigns</li>
+                    <li><strong>Keyword Selection:</strong> Target high-intent keywords with commercial value</li>
+                    <li><strong>Ad Copywriting:</strong> Create compelling ad copy that drives clicks</li>
+                    <li><strong>Landing Page Optimization:</strong> Design high-converting landing pages</li>
+                    <li><strong>Bid Management:</strong> Optimize bids for maximum ROI, reduce cost per click</li>
+                    <li><strong>A/B Testing:</strong> Test different ads, keywords, landing pages continuously</li>
+                    <li><strong>Conversion Tracking:</strong> Track every lead, sale, and revenue generated</li>
+                    <li><strong>Monthly Optimization:</strong> Continuous improvement based on data</li>
+                </ul>
+                <p><strong>Typical Results:</strong> 2-4x ROI on ad spend within 3 months</p>
+
+                <h4>4. Content Marketing</h4>
+                <p>Build authority, trust, and organic traffic with valuable content.</p>
+                <ul>
+                    <li><strong>Blog Writing:</strong> 4-8 SEO-optimized blog posts per month</li>
+                    <li><strong>Case Studies:</strong> Showcase success stories and results</li>
+                    <li><strong>White Papers & E-books:</strong> In-depth guides for lead generation</li>
+                    <li><strong>Infographics:</strong> Visual content for social sharing</li>
+                    <li><strong>Video Content:</strong> Explainer videos, tutorials, testimonials</li>
+                    <li><strong>Email Newsletters:</strong> Regular newsletters to nurture leads</li>
+                    <li><strong>Guest Posting:</strong> Publish on high-authority industry websites</li>
+                </ul>
+                <p><strong>Goal:</strong> Position your brand as industry thought leader</p>
+
+                <h4>5. Email Marketing</h4>
+                <p>Nurture leads and convert them into customers with targeted emails.</p>
+                <ul>
+                    <li><strong>Email List Building:</strong> Grow your subscriber base with lead magnets</li>
+                    <li><strong>Email Sequences:</strong> Automated welcome, nurture, and sales sequences</li>
+                    <li><strong>Newsletter Design:</strong> Beautiful, mobile-responsive email templates</li>
+                    <li><strong>Segmentation:</strong> Send targeted emails based on behavior and interests</li>
+                    <li><strong>A/B Testing:</strong> Test subject lines, content, CTAs for better open rates</li>
+                    <li><strong>Analytics:</strong> Track open rates, click rates, conversions</li>
+                    <li><strong>Tools:</strong> Mailchimp, SendGrid, HubSpot, or your preferred platform</li>
+                </ul>
+                <p><strong>Average Results:</strong> 20-30% open rate, 3-5% click rate, 10-15% conversion rate</p>
+
+                <h4>6. LinkedIn Marketing (B2B Focus)</h4>
+                <p>Generate B2B leads and establish thought leadership.</p>
+                <ul>
+                    <li><strong>Profile Optimization:</strong> Optimize personal and company profiles</li>
+                    <li><strong>Content Strategy:</strong> Posts, articles, polls, videos for engagement</li>
+                    <li><strong>Lead Generation:</strong> Direct outreach and connection building</li>
+                    <li><strong>LinkedIn Ads:</strong> Sponsored content, InMail, text ads</li>
+                    <li><strong>Employee Advocacy:</strong> Amplify reach through employee networks</li>
+                    <li><strong>LinkedIn Groups:</strong> Engage in relevant industry groups</li>
+                </ul>
+                <p><strong>Best for:</strong> SaaS, B2B services, consulting, enterprise software</p>
+
+                <h4>7. WhatsApp Marketing</h4>
+                <p>Direct, personal communication with high engagement rates.</p>
+                <ul>
+                    <li><strong>Broadcast Lists:</strong> Send updates to multiple contacts</li>
+                    <li><strong>WhatsApp Business:</strong> Professional business profile setup</li>
+                    <li><strong>Automated Responses:</strong> Quick replies for common questions</li>
+                    <li><strong>Rich Media:</strong> Images, videos, PDFs, product catalogs</li>
+                    <li><strong>Status Updates:</strong> Share updates visible to all contacts</li>
+                    <li><strong>Group Marketing:</strong> Engage prospects in targeted groups</li>
+                </ul>
+                <p><strong>Engagement:</strong> 98% open rate, 45-60% response rate (much higher than email)</p>
+
+                <h4>8. Conversion Rate Optimization (CRO)</h4>
+                <p>Turn more website visitors into leads and customers.</p>
+                <ul>
+                    <li><strong>Website Audit:</strong> Identify friction points and drop-offs</li>
+                    <li><strong>A/B Testing:</strong> Test headlines, CTAs, forms, layouts</li>
+                    <li><strong>Landing Page Design:</strong> Create high-converting landing pages</li>
+                    <li><strong>Form Optimization:</strong> Reduce form fields, improve completion rates</li>
+                    <li><strong>Heat Maps & Recordings:</strong> See exactly how users interact with site</li>
+                    <li><strong>Funnel Analysis:</strong> Optimize each step of customer journey</li>
+                </ul>
+                <p><strong>Impact:</strong> 20-50% increase in conversion rate typical</p>
+
+                <h3>Industries We Serve</h3>
+                <ul>
+                    <li><strong>Technology & SaaS:</strong> Software products, IT services, tech startups</li>
+                    <li><strong>Education:</strong> Coaching institutes, online courses, training programs</li>
+                    <li><strong>E-commerce:</strong> Online stores, marketplaces, D2C brands</li>
+                    <li><strong>Healthcare:</strong> Clinics, hospitals, telemedicine, health tech</li>
+                    <li><strong>Real Estate:</strong> Developers, brokers, property management</li>
+                    <li><strong>Professional Services:</strong> Consultancies, agencies, law firms, accounting</li>
+                    <li><strong>Manufacturing:</strong> B2B manufacturers, industrial products</li>
+                </ul>
+
+                <h3>Our Process</h3>
+                <p><strong>Month 1: Research & Setup</strong></p>
+                <ul>
+                    <li>Business and audience research</li>
+                    <li>Competitor analysis</li>
+                    <li>Strategy development</li>
+                    <li>Account setups and tracking</li>
+                    <li>Initial campaigns launch</li>
+                </ul>
+
+                <p><strong>Month 2-3: Execution & Optimization</strong></p>
+                <ul>
+                    <li>Content creation and publishing</li>
+                    <li>Campaign monitoring and tweaking</li>
+                    <li>A/B testing and improvements</li>
+                    <li>Weekly performance reviews</li>
+                </ul>
+
+                <p><strong>Month 4+: Scaling & Growth</strong></p>
+                <ul>
+                    <li>Scale what's working</li>
+                    <li>Expand to new channels</li>
+                    <li>Advanced strategies implementation</li>
+                    <li>Continuous optimization</li>
+                </ul>
+
+                <div class="pricing-box">
+                    <h4>💰 Digital Marketing Packages</h4>
+                    
+                    <p><strong>Startup Package:</strong> ₹15,000/month</p>
+                    <p>• SEO (Basic) • Social Media (2 platforms) • 4 blog posts • Monthly report</p>
+                    <p>Best for: New businesses, small budgets</p>
+                    
+                    <p><strong>Growth Package:</strong> ₹30,000/month</p>
+                    <p>• SEO (Advanced) • Social Media (3 platforms) • Google Ads • 8 blog posts • Email marketing • Bi-weekly calls</p>
+                    <p>Best for: Growing businesses ready to scale</p>
+                    
+                    <p><strong>Enterprise Package:</strong> ₹50,000/month</p>
+                    <p>• Full-service marketing • All channels • Dedicated account manager • Weekly strategy calls • Custom content • CRO • Advanced analytics</p>
+                    <p>Best for: Established businesses, serious growth</p>
+                    
+                    <p><strong>Performance-Based Option:</strong> Base fee + % of revenue generated</p>
+                    <p>We're confident enough to tie our fees to your results</p>
+                </div>
+
+                <h3>What You Get</h3>
+                <ul>
+                    <li><strong>Dedicated Account Manager:</strong> Your single point of contact</li>
+                    <li><strong>Monthly Strategy Calls:</strong> Review performance and plan ahead</li>
+                    <li><strong>Comprehensive Reporting:</strong> Traffic, leads, conversions, ROI tracked</li>
+                    <li><strong>Content Calendar:</strong> Plan all content 30 days in advance</li>
+                    <li><strong>Access to Tools:</strong> SEO tools, analytics, design tools</li>
+                    <li><strong>Transparent Pricing:</strong> No hidden costs, clear deliverables</li>
+                    <li><strong>Flexible Contracts:</strong> Month-to-month, no long-term lock-in</li>
+                </ul>
+
+                <h3>Success Metrics We Track</h3>
+                <ul>
+                    <li>Website traffic (organic & paid)</li>
+                    <li>Keyword rankings (top 10 positions)</li>
+                    <li>Lead generation (form fills, calls, emails)</li>
+                    <li>Cost per lead (CPL)</li>
+                    <li>Conversion rate (%)</li>
+                    <li>Return on ad spend (ROAS)</li>
+                    <li>Social media engagement (likes, comments, shares)</li>
+                    <li>Email open and click rates</li>
+                    <li>Revenue generated (most important!)</li>
+                </ul>
+
+                <div class="highlight-box">
+                    <h4>📊 Typical Results (3-6 months)</h4>
+                    <p><strong>SEO:</strong> 100-300% increase in organic traffic, 50-100 qualified leads/month</p>
+                    <p><strong>Google Ads:</strong> 2-4x ROI, ₹50-200 cost per lead depending on industry</p>
+                    <p><strong>Social Media:</strong> 50-100% follower growth, 5-10 leads per week from organic</p>
+                    <p><strong>Content Marketing:</strong> 3-5x website traffic in 6 months, established authority</p>
+                </div>
+
+                <button class="copy-btn" onclick="copySection('digital-marketing')">📋 Copy Digital Marketing Description</button>
+            </div>
+
+            <!-- AI/ML PROJECTS & TRAINING -->
+            <div id="ai-ml" class="service-section">
+                <h2>🤖 9. AI/ML Projects & Training</h2>
+                
+                <h3>Service Overview</h3>
+                <p>Artificial Intelligence and Machine Learning are transforming every industry. Whether you're a student looking to build AI skills or a business wanting to leverage AI for competitive advantage, we provide both training programs and custom AI solution development. Our practical, hands-on approach ensures you understand not just theory but how to build and deploy real AI systems.</p>
+
+                <h3>AI/ML Training Program</h3>
+                
+                <h4>Program Overview</h4>
+                <p>Our 3-month intensive AI/ML training program transforms beginners into job-ready AI engineers. The program covers fundamentals to advanced topics with 80% practical projects and 20% theory.</p>
+
+                <p><strong>Duration:</strong> 12 weeks (3 months)</p>
+                <p><strong>Mode:</strong> Live Online + Offline (Hyderabad)</p>
+                <p><strong>Schedule:</strong> 3 days/week, 2 hours/session (total 72 hours)</p>
+                <p><strong>Batch Size:</strong> Maximum 20 students for personalized attention</p>
+
+                <h4>Complete Curriculum</h4>
+                
+                <p><strong>Month 1: Python & Data Science Foundations</strong></p>
+                <ul>
+                    <li><strong>Week 1-2: Python Mastery</strong>
+                        <ul>
+                            <li>Python basics and advanced features</li>
+                            <li>NumPy for numerical computing</li>
+                            <li>Pandas for data manipulation</li>
+                            <li>Data visualization (Matplotlib, Seaborn)</li>
+                            <li>Jupyter notebooks and Google Colab</li>
+                        </ul>
+                    </li>
+                    <li><strong>Week 3-4: Statistics & Mathematics</strong>
+                        <ul>
+                            <li>Descriptive statistics and probability</li>
+                            <li>Distributions (Normal, Binomial, Poisson)</li>
+                            <li>Hypothesis testing and p-values</li>
+                            <li>Linear algebra basics for ML</li>
+                            <li>Calculus concepts (derivatives, gradients)</li>
+                        </ul>
+                    </li>
+                </ul>
+
+                <p><strong>Month 2: Machine Learning</strong></p>
+                <ul>
+                    <li><strong>Week 5-6: Supervised Learning</strong>
+                        <ul>
+                            <li>Linear Regression (simple & multiple)</li>
+                            <li>Logistic Regression for classification</li>
+                            <li>Decision Trees and Random Forests</li>
+                            <li>Support Vector Machines (SVM)</li>
+                            <li>K-Nearest Neighbors (KNN)</li>
+                            <li>Model evaluation metrics (accuracy, precision, recall, F1)</li>
+                        </ul>
+                    </li>
+                    <li><strong>Week 7-8: Advanced ML</strong>
+                        <ul>
+                            <li>Unsupervised Learning (K-Means, Hierarchical Clustering)</li>
+                            <li>Dimensionality Reduction (PCA, t-SNE)</li>
+                            <li>Ensemble Methods (Bagging, Boosting, XGBoost)</li>
+                            <li>Feature Engineering and Selection</li>
+                            <li>Handling imbalanced datasets</li>
+                            <li>Hyperparameter tuning (Grid Search, Random Search)</li>
+                        </ul>
+                    </li>
+                </ul>
+
+                <p><strong>Month 3: Deep Learning & Specializations</strong></p>
+                <ul>
+                    <li><strong>Week 9-10: Deep Learning</strong>
+                        <ul>
+                            <li>Neural Networks fundamentals</li>
+                            <li>TensorFlow and Keras</li>
+                            <li>Convolutional Neural Networks (CNN) for images</li>
+                            <li>Recurrent Neural Networks (RNN) for sequences</li>
+                            <li>Transfer Learning (ResNet, VGG, BERT)</li>
+                        </ul>
+                    </li>
+                    <li><strong>Week 11: NLP (Natural Language Processing)</strong>
+                        <ul>
+                            <li>Text preprocessing and tokenization</li>
+                            <li>TF-IDF and Word Embeddings (Word2Vec, GloVe)</li>
+                            <li>Sentiment Analysis</li>
+                            <li>Text Classification</li>
+                            <li>Named Entity Recognition (NER)</li>
+                        </ul>
+                    </li>
+                    <li><strong>Week 12: Computer Vision</strong>
+                        <ul>
+                            <li>Image preprocessing with OpenCV</li>
+                            <li>Object Detection (YOLO, R-CNN)</li>
+                            <li>Face Recognition</li>
+                            <li>Image Segmentation</li>
+                            <li>Real-time video processing</li>
+                        </ul>
+                    </li>
+                </ul>
+
+                <h4>Hands-on Projects (5 Major Projects)</h4>
+                <ul>
+                    <li><strong>Project 1:</strong> House Price Prediction using Linear Regression</li>
+                    <li><strong>Project 2:</strong> Customer Churn Prediction (Classification)</li>
+                    <li><strong>Project 3:</strong> Sentiment Analysis of Product Reviews (NLP)</li>
+                    <li><strong>Project 4:</strong> Face Mask Detection using CNN (Computer Vision)</li>
+                    <li><strong>Project 5:</strong> Recommendation System (Collaborative Filtering)</li>
+                </ul>
+
+                <h4>What's Included in Training</h4>
+                <ul>
+                    <li>72 hours of live training sessions</li>
+                    <li>Lifetime access to recorded videos</li>
+                    <li>Complete study materials (PDFs, code, datasets)</li>
+                    <li>Google Colab Pro subscription (₹5,000 value)</li>
+                    <li>5 industry-grade projects with code</li>
+                    <li>GitHub portfolio setup</li>
+                    <li>Certificate of completion</li>
+                    <li>3 mock interviews for AI/ML roles</li>
+                    <li>Job referrals to hiring companies</li>
+                    <li>Lifetime WhatsApp support group</li>
+                </ul>
+
+                <div class="pricing-box">
+                    <h4>💰 Training Program Pricing</h4>
+                    <p><strong>Regular Fee:</strong> ₹35,000 per student</p>
+                    <p><strong>Early Bird:</strong> ₹30,000 (Enroll 2 weeks before batch)</p>
+                    <p><strong>Group Discount:</strong> ₹28,000 per student (3+ students)</p>
+                    <p><strong>Payment Terms:</strong> ₹15,000 advance + ₹15,000 after month 1</p>
+                    <p><strong>ROI:</strong> AI/ML engineers earn ₹6-12 LPA starting salary!</p>
+                </div>
+
+                <h3>AI/ML Project Development Services</h3>
+                
+                <h4>Custom AI Solutions We Build</h4>
+                
+                <p><strong>1. Predictive Analytics</strong></p>
+                <ul>
+                    <li>Sales forecasting</li>
+                    <li>Demand prediction</li>
+                    <li>Customer lifetime value prediction</li>
+                    <li>Churn prediction</li>
+                    <li>Risk assessment models</li>
+                </ul>
+
+                <p><strong>2. Natural Language Processing (NLP)</strong></p>
+                <ul>
+                    <li>Chatbots and virtual assistants</li>
+                    <li>Sentiment analysis of reviews/social media</li>
+                    <li>Document classification and tagging</li>
+                    <li>Text summarization</li>
+                    <li>Language translation systems</li>
+                    <li>Question answering systems</li>
+                </ul>
+
+                <p><strong>3. Computer Vision</strong></p>
+                <ul>
+                    <li>Object detection and tracking</li>
+                    <li>Face recognition systems</li>
+                    <li>OCR (text extraction from images)</li>
+                    <li>Quality inspection (defect detection)</li>
+                    <li>Image classification and tagging</li>
+                    <li>Video analytics</li>
+                </ul>
+
+                <p><strong>4. Recommendation Systems</strong></p>
+                <ul>
+                    <li>Product recommendations (e-commerce)</li>
+                    <li>Content recommendations (Netflix-style)</li>
+                    <li>Personalized marketing</li>
+                    <li>Job matching systems</li>
+                </ul>
+
+                <p><strong>5. Anomaly Detection</strong></p>
+                <ul>
+                    <li>Fraud detection (payments, insurance)</li>
+                    <li>Network intrusion detection</li>
+                    <li>Quality control in manufacturing</li>
+                    <li>Healthcare monitoring alerts</li>
+                </ul>
+
+                <h4>Our AI Development Process</h4>
+                <p><strong>Week 1: Discovery & Data</strong></p>
+                <ul>
+                    <li>Understand business problem</li>
+                    <li>Data collection and exploration</li>
+                    <li>Feasibility assessment</li>
+                    <li>Define success metrics</li>
+                </ul>
+
+                <p><strong>Week 2-4: Model Development</strong></p>
+                <ul>
+                    <li>Data cleaning and preprocessing</li>
+                    <li>Feature engineering</li>
+                    <li>Model training and testing</li>
+                    <li>Hyperparameter optimization</li>
+                    <li>Model evaluation</li>
+                </ul>
+
+                <p><strong>Week 5-6: Deployment</strong></p>
+                <ul>
+                    <li>API development (Flask/FastAPI)</li>
+                    <li>Cloud deployment (AWS/Azure)</li>
+                    <li>Frontend integration</li>
+                    <li>Performance monitoring setup</li>
+                    <li>Documentation and training</li>
+                </ul>
+
+                <div class="pricing-box">
+                    <h4>💰 AI Project Pricing</h4>
+                    <p><strong>Simple AI Project:</strong> ₹50,000 - ₹80,000</p>
+                    <p>Basic ML models, small datasets, simple deployment</p>
+                    
+                    <p><strong>Medium Complexity:</strong> ₹1,00,000 - ₹2,50,000</p>
+                    <p>Advanced ML/DL, custom models, API development</p>
+                    
+                    <p><strong>Complex AI Solution:</strong> ₹3,00,000+</p>
+                    <p>Multiple models, real-time processing, scalable infrastructure</p>
+                    
+                    <p><strong>Timeline:</strong> 6-12 weeks depending on complexity</p>
+                </div>
+
+                <h3>Success Stories</h3>
+                <div class="highlight-box">
+                    <p><strong>Student Outcome:</strong> "Completed AI/ML training, built 5 projects, got placed at Accenture as ML Engineer at ₹8 LPA!" - Srikanth, JNTUH</p>
+                    <p><strong>Business Project:</strong> Built customer churn prediction model for telecom client. Reduced churn by 25%, saved ₹50L annually.</p>
+                    <p><strong>Product Success:</strong> Developed OCR system for invoice processing. Client processes 10,000+ invoices/month, saving 200 man-hours.</p>
+                </div>
+
+                <button class="copy-btn" onclick="copySection('ai-ml')">📋 Copy AI/ML Description</button>
+            </div>
+
+            <!-- US IT STAFFING -->
+            <div id="us-staffing" class="service-section">
+                <h2>🇺🇸 10. US IT Staffing Services</h2>
+                
+                <h3>Service Overview</h3>
+                <p>SmartGrow Infotech bridges the gap between US companies seeking skilled tech talent and highly qualified Indian developers. We provide pre-vetted, experienced Indian IT professionals who work as remote contractors for US-based companies, offering significant cost savings without compromising on quality.</p>
+
+                <p>Our developers work in US time zones, communicate fluently in English, follow US business practices, and deliver work that meets or exceeds US quality standards - all at 40-60% lower cost than hiring locally in the US.</p>
+
+                <h3>For US Companies: Why Hire Through Us</h3>
+                
+                <h4>Cost Savings Without Quality Compromise</h4>
+                <ul>
+                    <li><strong>40-60% Cost Reduction:</strong> Typical US developer: $120-180/hour. Our rates: $50-75/hour</li>
+                    <li><strong>No Benefits Overhead:</strong> No health insurance, 401k, or other employee benefits</li>
+                    <li><strong>No Recruitment Costs:</strong> We handle sourcing, screening, interviews</li>
+                    <li><strong>Flexible Scaling:</strong> Ramp up or down without severance concerns</li>
+                    <li><strong>No Infrastructure Costs:</strong> Developers work from their own setup</li>
+                </ul>
+
+                <h4>Quality & Reliability</h4>
+                <ul>
+                    <li><strong>Pre-Vetted Talent:</strong> Only top 5% of applicants pass our screening</li>
+                    <li><strong>Proven Experience:</strong> 3-10+ years of hands-on experience</li>
+                    <li><strong>Strong Communication:</strong> Fluent English, experienced in working with US teams</li>
+                    <li><strong>US Time Zone Overlap:</strong> Minimum 4-5 hours overlap with EST/PST</li>
+                    <li><strong>Cultural Fit:</strong> Understand US work culture and expectations</li>
+                    <li><strong>Accountability:</strong> We manage performance and handle any issues</li>
+                </ul>
+
+                <h4>Technical Expertise We Provide</h4>
+                
+                <p><strong>Software Development:</strong></p>
+                <ul>
+                    <li>Full-Stack Developers (Java, Python, Node.js, React, Angular)</li>
+                    <li>Backend Engineers (Spring Boot, Django, .NET, Microservices)</li>
+                    <li>Frontend Engineers (React, Vue, Angular, TypeScript)</li>
+                    <li>Mobile Developers (iOS, Android, React Native, Flutter)</li>
+                </ul>
+
+                <p><strong>Data & Analytics:</strong></p>
+                <ul>
+                    <li>Data Engineers (Kafka, Airflow, Spark, Snowflake)</li>
+                    <li>Data Scientists (Python, ML, Statistics, Visualization)</li>
+                    <li>Data Analysts (SQL, Tableau, Power BI, Python)</li>
+                    <li>ML Engineers (TensorFlow, PyTorch, Model Deployment)</li>
+                </ul>
+
+                <p><strong>Cloud & DevOps:</strong></p>
+                <ul>
+                    <li>DevOps Engineers (AWS, Azure, GCP, Kubernetes, Docker)</li>
+                    <li>Cloud Architects (Solution design, Migration, Optimization)</li>
+                    <li>Site Reliability Engineers (Monitoring, Incident Response)</li>
+                    <li>Security Engineers (AppSec, Cloud Security, Compliance)</li>
+                </ul>
+
+                <p><strong>Specialized Roles:</strong></p>
+                <ul>
+                    <li>QA/Test Engineers (Automation, Selenium, API testing)</li>
+                    <li>UI/UX Designers (Figma, Adobe XD, User Research)</li>
+                    <li>Business Analysts (Requirements, Documentation, Agile)</li>
+                    <li>Technical Project Managers (Scrum, Kanban, Jira)</li>
+                </ul>
+
+                <h3>Our Vetting Process</h3>
+                
+                <p><strong>Step 1: Resume Screening</strong></p>
+                <p>Check experience, technologies, English proficiency, US exposure</p>
+
+                <p><strong>Step 2: Technical Assessment</strong></p>
+                <p>Coding tests, system design, technology-specific questions (95% filtered out here)</p>
+
+                <p><strong>Step 3: Technical Interview</strong></p>
+                <p>1-hour deep-dive: problem-solving, architecture, best practices</p>
+
+                <p><strong>Step 4: Communication Assessment</strong></p>
+                <p>English fluency, explaining technical concepts, client interaction</p>
+
+                <p><strong>Step 5: Background Verification</strong></p>
+                <p>Employment history, education, references</p>
+
+                <p><strong>Result:</strong> Only 5% of applicants make it to our talent pool</p>
+
+                <h3>How It Works</h3>
+            -5 pre-screened candidate profiles within 48 hours</li>
+                    <li><strong>Interview:</strong> Interview candidates directly (we can assist)</li>
+                    <li><strong>Trial Period:</strong> 2-week paid trial to evaluate fit</li>
+                    <li><strong>Onboard:</strong> Sign contract, developer starts working</li>
+                    <li><strong>Ongoing:</strong> We manage payroll, performance, any issues</li>
+                </ol>
+
+                <p><strong>Contract Types:</strong></p>
+                <ul>
+                    <li><strong>Full-Time (40 hrs/week):</strong> Dedicated resource, long-term projects</li>
+                    <li><strong>Part-Time (20 hrs/week):</strong> Maintenance, support, small projects</li>
+                    <li><strong>Project-Based:</strong> Fixed scope, defined timeline</li>
+                    <li><strong>Staff Augmentation:</strong> Integrate with your existing team</li>
+                </ul>
+
+                <h3>Pricing & Billing</h3>
+                
+                <div class="pricing-box">
+                    <h4>💰 Hourly Rates (Full-Time)</h4>
+                    
+                    <p><strong>Junior (1-3 years):</strong> $35-45/hour</p>
+                    <p>Good for maintenance, support, junior tasks</p>
+                    
+                    <p><strong>Mid-Level (3-6 years):</strong> $45-60/hour</p>
+                    <p>Most common, good for feature development</p>
+                    
+                    <p><strong>Senior (6-10 years):</strong> $60-75/hour</p>
+                    <p>Architecture, complex problems, technical leadership</p>
+                    
+                    <p><strong>Architect/Lead (10+ years):</strong> $75-100/hour</p>
+                    <p>System design, technical strategy, team leadership</p>
+                    
+                    <p><strong>Comparison:</strong> US Developer: $120-180/hour</p>
+                    <p><strong>Your Savings:</strong> 40-60% on the same quality!</p>
+                </div>
+
+                <h4>Billing Terms</h4>
+                <ul>
+                    <li><strong>Invoicing:</strong> Monthly, based on hours worked</li>
+                    <li><strong>Time Tracking:</strong> Hubstaff, Jira, or your preferred tool</li>
+                    <li><strong>Payment:</strong> Wire transfer, PayPal, Wise</li>
+                    <li><strong>Currency:</strong> USD</li>
+                    <li><strong>Contract:</strong> Standard MSA (Master Service Agreement)</li>
+                    <li><strong>Minimum Commitment:</strong> 3 months (after trial)</li>
+                </ul>
+
+                <h3>Quality Guarantees</h3>
+                <ul>
+                    <li><strong>2-Week Trial:</strong> Evaluate developer before long-term commitment</li>
+                    <li><strong>Free Replacement:</strong> If developer doesn't work out, we replace at no cost</li>
+                    <li><strong>Performance Management:</strong> We handle underperformance issues</li>
+                    <li><strong>Time Zone Commitment:</strong> Guaranteed 4-5 hours daily overlap</li>
+                    <li><strong>Communication SLA:</strong> Response within 4 business hours</li>
+                    <li><strong>IP Protection:</strong> NDAs and IP assignment agreements</li>
+                    <li><strong>Business Continuity:</strong> Backup resources if primary developer unavailable</li>
+                </ul>
+
+                <h3>For Indian Developers: Join Our Talent Pool</h3>
+                
+                <h4>Why Work With US Clients Through Us</h4>
+                <ul>
+                    <li><strong>Higher Earnings:</strong> $50-75/hour = ₹1.5-3L/month (vs ₹60-80K in Indian companies)</li>
+                    <li><strong>Work-Life Balance:</strong> Remote work, flexible hours (with some US overlap)</li>
+                    <li><strong>International Exposure:</strong> Work on cutting-edge US projects</li>
+                    <li><strong>Career Growth:</strong> Learn from world-class teams and practices</li>
+                    <li><strong>Stable Income:</strong> Long-term contracts, reliable payments</li>
+
+                    <li><strong>No Bench Time:</strong> Always working on projects</li>
+                    <li><strong>Multiple Clients:</strong> Diverse project experience</li>
+                </ul>
+
+                <button class="copy-btn" onclick="copySection('us-staffing')">📋 Copy US Staffing Description</button>
+            </div>
+
+        </div>
+    
+    <!-- Footer -->
+    <div class="footer">
+        <h2>🚀 Ready to Transform Your Business?</h2>
+        <p style="font-size: 1.2em; margin: 20px 0;">Let's Build Something Amazing Together</p>
+        
+        <div class="contact-info">
+            <h3 style="margin-bottom: 20px; font-size: 1.5em;">📞 Contact Information</h3>
+            <p><strong>📧 Email:</strong> info@smartgrowinfotech.com</p>
+            <p><strong>📱 Phone:</strong> +91 9063935182</p>
+            <p><strong>💬 WhatsApp:</strong> +91 9063935182</p>
+            <p><strong>🌐 Website:</strong> www.smartgrowinfotech.com</p>
+            <p><strong>📍 Location:</strong> Hyderabad, Telangana, India</p>
+        </div>
+        
+        <p style="margin-top: 30px; font-size: 1.1em;">⭐ 500+ Projects | 1000+ Students | 87% Placement Rate | 50+ Business Clients ⭐</p>
+    </div>
+
+    <script>
+        // Copy to clipboard function
+        function copySection(id) {
+            const section = document.getElementById(id);
+            const text = section.innerText;
+            navigator.clipboard.writeText(text).then(() => {
+                alert('✅ Content copied to clipboard!');
+            });
+        }
+        
+        // Smooth scroll
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                }
+            });
+        });
+    </script>
+
+</body>
+</html>
